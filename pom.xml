@@ -9,12 +9,12 @@
 	<artifactId>52n-wps-config</artifactId>
 	<packaging>jar</packaging>
 	<name>52n-WPS-Config</name>
-	<version>1.0.5</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<scm>
         <!-- Specification of the Source-Content-Managementsystem -->
-        <connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/tags/52n-wps-config-1.0.5</connection>
-        <developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/52n-wps-config/WPS/tags/52n-wps-config-1.0.5</developerConnection>
-		<url>https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/tags/52n-wps-config-1.0.5</url>
+        <connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/tags/52n-wps-config-null</connection>
+        <developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/52n-wps-config/tags/52n-wps-config-null</developerConnection>
+		<url>https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/tags/52n-wps-config-null</url>
   	</scm>
 	<dependencies>
 		<dependency>
