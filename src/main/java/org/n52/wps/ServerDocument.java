@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface ServerDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ServerDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("server13fedoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ServerDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("server13fedoctype");
     
     /**
      * Gets the "Server" element
@@ -42,7 +42,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
     public interface Server extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Server.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("server817delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Server.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("server817delemtype");
         
         /**
          * Gets array of all "Property" elements
@@ -257,7 +257,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface Hostname extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Hostname.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("hostnamec10aattrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Hostname.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("hostnamec10aattrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -287,7 +287,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface Hostport extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Hostport.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("hostport44d4attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Hostport.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("hostport44d4attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -317,7 +317,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface IncludeDataInputsInResponse extends org.apache.xmlbeans.XmlBoolean
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IncludeDataInputsInResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("includedatainputsinresponsee0d4attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IncludeDataInputsInResponse.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("includedatainputsinresponsee0d4attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -347,7 +347,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface ComputationTimeoutMilliSeconds extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ComputationTimeoutMilliSeconds.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("computationtimeoutmillisecondsd531attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ComputationTimeoutMilliSeconds.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("computationtimeoutmillisecondsd531attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -377,7 +377,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface CacheCapabilites extends org.apache.xmlbeans.XmlBoolean
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(CacheCapabilites.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("cachecapabilites0a70attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(CacheCapabilites.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("cachecapabilites0a70attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -407,7 +407,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface WebappPath extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WebappPath.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("webapppathbb8battrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WebappPath.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("webapppathbb8battrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -437,7 +437,7 @@ public interface ServerDocument extends org.apache.xmlbeans.XmlObject
         public interface RepoReloadInterval extends org.apache.xmlbeans.XmlDouble
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RepoReloadInterval.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("reporeloadinterval5ccdattrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RepoReloadInterval.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("reporeloadinterval5ccdattrtype");
             
             /**
              * A factory class with static methods for creating instances

@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface RepositoryDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RepositoryDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("repositorya917doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RepositoryDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("repositorya917doctype");
     
     /**
      * Gets the "Repository" element
@@ -42,7 +42,7 @@ public interface RepositoryDocument extends org.apache.xmlbeans.XmlObject
     public interface Repository extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Repository.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("repositoryf31delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Repository.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("repositoryf31delemtype");
         
         /**
          * Gets array of all "Property" elements
@@ -152,7 +152,7 @@ public interface RepositoryDocument extends org.apache.xmlbeans.XmlObject
         public interface Name extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("namef852attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("namef852attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -182,7 +182,7 @@ public interface RepositoryDocument extends org.apache.xmlbeans.XmlObject
         public interface ClassName extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ClassName.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("classname4572attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ClassName.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("classname4572attrtype");
             
             /**
              * A factory class with static methods for creating instances

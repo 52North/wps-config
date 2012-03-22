@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface ParserListDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("parserlist7424doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("parserlist7424doctype");
     
     /**
      * Gets the "ParserList" element
@@ -42,7 +42,7 @@ public interface ParserListDocument extends org.apache.xmlbeans.XmlObject
     public interface ParserList extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("parserlist103delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("parserlist103delemtype");
         
         /**
          * Gets array of all "Parser" elements

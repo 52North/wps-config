@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface PropertyDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(PropertyDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("propertya26cdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(PropertyDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("propertya26cdoctype");
     
     /**
      * Gets the "Property" element
@@ -42,7 +42,7 @@ public interface PropertyDocument extends org.apache.xmlbeans.XmlObject
     public interface Property extends org.n52.wps.TProperty
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Property.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("propertyc13delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Property.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("propertyc13delemtype");
         
         /**
          * Gets the "name" attribute
@@ -92,7 +92,7 @@ public interface PropertyDocument extends org.apache.xmlbeans.XmlObject
         public interface Name extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("namea8f2attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("namea8f2attrtype");
             
             /**
              * A factory class with static methods for creating instances

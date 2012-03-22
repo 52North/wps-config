@@ -10,7 +10,7 @@
 	<artifactId>52n-wps-config</artifactId>
 	<packaging>jar</packaging>
 	<name>52n-WPS-Config</name>
-	<version>1.0.4</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>

@@ -88,15 +88,133 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             super(sType);
         }
         
-        private static final javax.xml.namespace.QName PROPERTY$0 = 
+        private static final javax.xml.namespace.QName FORMAT$0 = 
+            new javax.xml.namespace.QName("http://n52.org/wps", "Format");
+        private static final javax.xml.namespace.QName PROPERTY$2 = 
             new javax.xml.namespace.QName("http://n52.org/wps", "Property");
-        private static final javax.xml.namespace.QName NAME$2 = 
+        private static final javax.xml.namespace.QName NAME$4 = 
             new javax.xml.namespace.QName("", "name");
-        private static final javax.xml.namespace.QName CLASSNAME$4 = 
+        private static final javax.xml.namespace.QName CLASSNAME$6 = 
             new javax.xml.namespace.QName("", "className");
-        private static final javax.xml.namespace.QName ACTIVE$6 = 
+        private static final javax.xml.namespace.QName ACTIVE$8 = 
             new javax.xml.namespace.QName("", "active");
         
+        
+        /**
+         * Gets array of all "Format" elements
+         */
+        public org.n52.wps.FormatDocument.Format[] getFormatArray()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                java.util.List targetList = new java.util.ArrayList();
+                get_store().find_all_element_users(FORMAT$0, targetList);
+                org.n52.wps.FormatDocument.Format[] result = new org.n52.wps.FormatDocument.Format[targetList.size()];
+                targetList.toArray(result);
+                return result;
+            }
+        }
+        
+        /**
+         * Gets ith "Format" element
+         */
+        public org.n52.wps.FormatDocument.Format getFormatArray(int i)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.n52.wps.FormatDocument.Format target = null;
+                target = (org.n52.wps.FormatDocument.Format)get_store().find_element_user(FORMAT$0, i);
+                if (target == null)
+                {
+                    throw new IndexOutOfBoundsException();
+                }
+                return target;
+            }
+        }
+        
+        /**
+         * Returns number of "Format" element
+         */
+        public int sizeOfFormatArray()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                return get_store().count_elements(FORMAT$0);
+            }
+        }
+        
+        /**
+         * Sets array of all "Format" element
+         */
+        public void setFormatArray(org.n52.wps.FormatDocument.Format[] formatArray)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                arraySetterHelper(formatArray, FORMAT$0);
+            }
+        }
+        
+        /**
+         * Sets ith "Format" element
+         */
+        public void setFormatArray(int i, org.n52.wps.FormatDocument.Format format)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.n52.wps.FormatDocument.Format target = null;
+                target = (org.n52.wps.FormatDocument.Format)get_store().find_element_user(FORMAT$0, i);
+                if (target == null)
+                {
+                    throw new IndexOutOfBoundsException();
+                }
+                target.set(format);
+            }
+        }
+        
+        /**
+         * Inserts and returns a new empty value (as xml) as the ith "Format" element
+         */
+        public org.n52.wps.FormatDocument.Format insertNewFormat(int i)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.n52.wps.FormatDocument.Format target = null;
+                target = (org.n52.wps.FormatDocument.Format)get_store().insert_element_user(FORMAT$0, i);
+                return target;
+            }
+        }
+        
+        /**
+         * Appends and returns a new empty value (as xml) as the last "Format" element
+         */
+        public org.n52.wps.FormatDocument.Format addNewFormat()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                org.n52.wps.FormatDocument.Format target = null;
+                target = (org.n52.wps.FormatDocument.Format)get_store().add_element_user(FORMAT$0);
+                return target;
+            }
+        }
+        
+        /**
+         * Removes the ith "Format" element
+         */
+        public void removeFormat(int i)
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                get_store().remove_element(FORMAT$0, i);
+            }
+        }
         
         /**
          * Gets array of all "Property" elements
@@ -107,7 +225,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 java.util.List targetList = new java.util.ArrayList();
-                get_store().find_all_element_users(PROPERTY$0, targetList);
+                get_store().find_all_element_users(PROPERTY$2, targetList);
                 org.n52.wps.PropertyDocument.Property[] result = new org.n52.wps.PropertyDocument.Property[targetList.size()];
                 targetList.toArray(result);
                 return result;
@@ -123,7 +241,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.PropertyDocument.Property target = null;
-                target = (org.n52.wps.PropertyDocument.Property)get_store().find_element_user(PROPERTY$0, i);
+                target = (org.n52.wps.PropertyDocument.Property)get_store().find_element_user(PROPERTY$2, i);
                 if (target == null)
                 {
                     throw new IndexOutOfBoundsException();
@@ -140,7 +258,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             synchronized (monitor())
             {
                 check_orphaned();
-                return get_store().count_elements(PROPERTY$0);
+                return get_store().count_elements(PROPERTY$2);
             }
         }
         
@@ -152,7 +270,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             synchronized (monitor())
             {
                 check_orphaned();
-                arraySetterHelper(propertyArray, PROPERTY$0);
+                arraySetterHelper(propertyArray, PROPERTY$2);
             }
         }
         
@@ -165,7 +283,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.PropertyDocument.Property target = null;
-                target = (org.n52.wps.PropertyDocument.Property)get_store().find_element_user(PROPERTY$0, i);
+                target = (org.n52.wps.PropertyDocument.Property)get_store().find_element_user(PROPERTY$2, i);
                 if (target == null)
                 {
                     throw new IndexOutOfBoundsException();
@@ -183,7 +301,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.PropertyDocument.Property target = null;
-                target = (org.n52.wps.PropertyDocument.Property)get_store().insert_element_user(PROPERTY$0, i);
+                target = (org.n52.wps.PropertyDocument.Property)get_store().insert_element_user(PROPERTY$2, i);
                 return target;
             }
         }
@@ -197,7 +315,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.PropertyDocument.Property target = null;
-                target = (org.n52.wps.PropertyDocument.Property)get_store().add_element_user(PROPERTY$0);
+                target = (org.n52.wps.PropertyDocument.Property)get_store().add_element_user(PROPERTY$2);
                 return target;
             }
         }
@@ -210,7 +328,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             synchronized (monitor())
             {
                 check_orphaned();
-                get_store().remove_element(PROPERTY$0, i);
+                get_store().remove_element(PROPERTY$2, i);
             }
         }
         
@@ -223,7 +341,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(NAME$2);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(NAME$4);
                 if (target == null)
                 {
                     return null;
@@ -241,7 +359,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.ParserDocument.Parser.Name target = null;
-                target = (org.n52.wps.ParserDocument.Parser.Name)get_store().find_attribute_user(NAME$2);
+                target = (org.n52.wps.ParserDocument.Parser.Name)get_store().find_attribute_user(NAME$4);
                 return target;
             }
         }
@@ -255,10 +373,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(NAME$2);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(NAME$4);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(NAME$2);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(NAME$4);
                 }
                 target.setStringValue(name);
             }
@@ -273,10 +391,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.ParserDocument.Parser.Name target = null;
-                target = (org.n52.wps.ParserDocument.Parser.Name)get_store().find_attribute_user(NAME$2);
+                target = (org.n52.wps.ParserDocument.Parser.Name)get_store().find_attribute_user(NAME$4);
                 if (target == null)
                 {
-                    target = (org.n52.wps.ParserDocument.Parser.Name)get_store().add_attribute_user(NAME$2);
+                    target = (org.n52.wps.ParserDocument.Parser.Name)get_store().add_attribute_user(NAME$4);
                 }
                 target.set(name);
             }
@@ -291,7 +409,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(CLASSNAME$4);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(CLASSNAME$6);
                 if (target == null)
                 {
                     return null;
@@ -309,7 +427,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.ParserDocument.Parser.ClassName target = null;
-                target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().find_attribute_user(CLASSNAME$4);
+                target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().find_attribute_user(CLASSNAME$6);
                 return target;
             }
         }
@@ -323,10 +441,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(CLASSNAME$4);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(CLASSNAME$6);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(CLASSNAME$4);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(CLASSNAME$6);
                 }
                 target.setStringValue(className);
             }
@@ -341,10 +459,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.n52.wps.ParserDocument.Parser.ClassName target = null;
-                target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().find_attribute_user(CLASSNAME$4);
+                target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().find_attribute_user(CLASSNAME$6);
                 if (target == null)
                 {
-                    target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().add_attribute_user(CLASSNAME$4);
+                    target = (org.n52.wps.ParserDocument.Parser.ClassName)get_store().add_attribute_user(CLASSNAME$6);
                 }
                 target.set(className);
             }
@@ -359,7 +477,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$6);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$8);
                 if (target == null)
                 {
                     return false;
@@ -377,7 +495,7 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.XmlBoolean target = null;
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$6);
+                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$8);
                 return target;
             }
         }
@@ -391,10 +509,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$6);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$8);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(ACTIVE$6);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(ACTIVE$8);
                 }
                 target.setBooleanValue(active);
             }
@@ -409,10 +527,10 @@ public class ParserDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.XmlBoolean target = null;
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$6);
+                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$8);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(ACTIVE$6);
+                    target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(ACTIVE$8);
                 }
                 target.set(active);
             }

@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface FormatDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(FormatDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9AAA0E0157ADD16507D4BC651F836F05").resolveHandle("format06cadoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(FormatDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("format06cadoctype");
     
     /**
      * Gets the "Format" element
@@ -42,137 +42,97 @@ public interface FormatDocument extends org.apache.xmlbeans.XmlObject
     public interface Format extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Format.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9AAA0E0157ADD16507D4BC651F836F05").resolveHandle("formate6fdelemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Format.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("formate6fdelemtype");
         
         /**
-         * Gets the "Mimetype" element
+         * Gets the "mimetype" attribute
          */
         java.lang.String getMimetype();
         
         /**
-         * Gets (as xml) the "Mimetype" element
+         * Gets (as xml) the "mimetype" attribute
          */
-        org.n52.wps.MimetypeDocument.Mimetype xgetMimetype();
+        org.apache.xmlbeans.XmlString xgetMimetype();
         
         /**
-         * Sets the "Mimetype" element
+         * True if has "mimetype" attribute
+         */
+        boolean isSetMimetype();
+        
+        /**
+         * Sets the "mimetype" attribute
          */
         void setMimetype(java.lang.String mimetype);
         
         /**
-         * Sets (as xml) the "Mimetype" element
+         * Sets (as xml) the "mimetype" attribute
          */
-        void xsetMimetype(org.n52.wps.MimetypeDocument.Mimetype mimetype);
+        void xsetMimetype(org.apache.xmlbeans.XmlString mimetype);
         
         /**
-         * Gets the "SchemaList" element
+         * Unsets the "mimetype" attribute
          */
-        java.lang.String getSchemaList();
+        void unsetMimetype();
         
         /**
-         * Gets (as xml) the "SchemaList" element
+         * Gets the "schema" attribute
          */
-        org.n52.wps.SchemaListDocument.SchemaList xgetSchemaList();
+        java.lang.String getSchema();
         
         /**
-         * True if has "SchemaList" element
+         * Gets (as xml) the "schema" attribute
          */
-        boolean isSetSchemaList();
+        org.apache.xmlbeans.XmlString xgetSchema();
         
         /**
-         * Sets the "SchemaList" element
+         * True if has "schema" attribute
          */
-        void setSchemaList(java.lang.String schemaList);
+        boolean isSetSchema();
         
         /**
-         * Sets (as xml) the "SchemaList" element
+         * Sets the "schema" attribute
          */
-        void xsetSchemaList(org.n52.wps.SchemaListDocument.SchemaList schemaList);
+        void setSchema(java.lang.String schema);
         
         /**
-         * Unsets the "SchemaList" element
+         * Sets (as xml) the "schema" attribute
          */
-        void unsetSchemaList();
+        void xsetSchema(org.apache.xmlbeans.XmlString schema);
         
         /**
-         * Gets the "FileExtension" element
+         * Unsets the "schema" attribute
          */
-        java.lang.String getFileExtension();
+        void unsetSchema();
         
         /**
-         * Gets (as xml) the "FileExtension" element
-         */
-        org.n52.wps.FileExtensionDocument.FileExtension xgetFileExtension();
-        
-        /**
-         * True if has "FileExtension" element
-         */
-        boolean isSetFileExtension();
-        
-        /**
-         * Sets the "FileExtension" element
-         */
-        void setFileExtension(java.lang.String fileExtension);
-        
-        /**
-         * Sets (as xml) the "FileExtension" element
-         */
-        void xsetFileExtension(org.n52.wps.FileExtensionDocument.FileExtension fileExtension);
-        
-        /**
-         * Unsets the "FileExtension" element
-         */
-        void unsetFileExtension();
-        
-        /**
-         * Gets the "Encoding" element
+         * Gets the "encoding" attribute
          */
         java.lang.String getEncoding();
         
         /**
-         * Gets (as xml) the "Encoding" element
+         * Gets (as xml) the "encoding" attribute
          */
-        org.n52.wps.EncodingDocument.Encoding xgetEncoding();
+        org.apache.xmlbeans.XmlString xgetEncoding();
         
         /**
-         * True if has "Encoding" element
+         * True if has "encoding" attribute
          */
         boolean isSetEncoding();
         
         /**
-         * Sets the "Encoding" element
+         * Sets the "encoding" attribute
          */
         void setEncoding(java.lang.String encoding);
         
         /**
-         * Sets (as xml) the "Encoding" element
+         * Sets (as xml) the "encoding" attribute
          */
-        void xsetEncoding(org.n52.wps.EncodingDocument.Encoding encoding);
+        void xsetEncoding(org.apache.xmlbeans.XmlString encoding);
         
         /**
-         * Unsets the "Encoding" element
+         * Unsets the "encoding" attribute
          */
         void unsetEncoding();
-        
-        /**
-         * Gets the "active" attribute
-         */
-        boolean getActive();
-        
-        /**
-         * Gets (as xml) the "active" attribute
-         */
-        org.apache.xmlbeans.XmlBoolean xgetActive();
-        
-        /**
-         * Sets the "active" attribute
-         */
-        void setActive(boolean active);
-        
-        /**
-         * Sets (as xml) the "active" attribute
-         */
-        void xsetActive(org.apache.xmlbeans.XmlBoolean active);
         
         /**
          * A factory class with static methods for creating instances

@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface RemoteRepositoryListDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("remoterepositorylist8033doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("remoterepositorylist8033doctype");
     
     /**
      * Gets the "RemoteRepositoryList" element
@@ -42,7 +42,7 @@ public interface RemoteRepositoryListDocument extends org.apache.xmlbeans.XmlObj
     public interface RemoteRepositoryList extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("remoterepositoryliste95delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("remoterepositoryliste95delemtype");
         
         /**
          * Gets array of all "RemoteRepository" elements

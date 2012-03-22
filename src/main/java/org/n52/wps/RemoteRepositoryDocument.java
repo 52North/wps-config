@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface RemoteRepositoryDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("remoterepository2d31doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepositoryDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("remoterepository2d31doctype");
     
     /**
      * Gets the "RemoteRepository" element
@@ -42,7 +42,7 @@ public interface RemoteRepositoryDocument extends org.apache.xmlbeans.XmlObject
     public interface RemoteRepository extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepository.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("remoterepositoryc91delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(RemoteRepository.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("remoterepositoryc91delemtype");
         
         /**
          * Gets array of all "Property" elements
@@ -132,7 +132,7 @@ public interface RemoteRepositoryDocument extends org.apache.xmlbeans.XmlObject
         public interface Name extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("namea6d2attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("namea6d2attrtype");
             
             /**
              * A factory class with static methods for creating instances

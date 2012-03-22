@@ -89,19 +89,15 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
         }
         
         private static final javax.xml.namespace.QName MIMETYPE$0 = 
-            new javax.xml.namespace.QName("http://n52.org/wps", "Mimetype");
-        private static final javax.xml.namespace.QName SCHEMALIST$2 = 
-            new javax.xml.namespace.QName("http://n52.org/wps", "SchemaList");
-        private static final javax.xml.namespace.QName FILEEXTENSION$4 = 
-            new javax.xml.namespace.QName("http://n52.org/wps", "FileExtension");
-        private static final javax.xml.namespace.QName ENCODING$6 = 
-            new javax.xml.namespace.QName("http://n52.org/wps", "Encoding");
-        private static final javax.xml.namespace.QName ACTIVE$8 = 
-            new javax.xml.namespace.QName("", "active");
+            new javax.xml.namespace.QName("", "mimetype");
+        private static final javax.xml.namespace.QName SCHEMA$2 = 
+            new javax.xml.namespace.QName("", "schema");
+        private static final javax.xml.namespace.QName ENCODING$4 = 
+            new javax.xml.namespace.QName("", "encoding");
         
         
         /**
-         * Gets the "Mimetype" element
+         * Gets the "mimetype" attribute
          */
         public java.lang.String getMimetype()
         {
@@ -109,7 +105,7 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(MIMETYPE$0, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(MIMETYPE$0);
                 if (target == null)
                 {
                     return null;
@@ -119,21 +115,33 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
         }
         
         /**
-         * Gets (as xml) the "Mimetype" element
+         * Gets (as xml) the "mimetype" attribute
          */
-        public org.n52.wps.MimetypeDocument.Mimetype xgetMimetype()
+        public org.apache.xmlbeans.XmlString xgetMimetype()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.MimetypeDocument.Mimetype target = null;
-                target = (org.n52.wps.MimetypeDocument.Mimetype)get_store().find_element_user(MIMETYPE$0, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(MIMETYPE$0);
                 return target;
             }
         }
         
         /**
-         * Sets the "Mimetype" element
+         * True if has "mimetype" attribute
+         */
+        public boolean isSetMimetype()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                return get_store().find_attribute_user(MIMETYPE$0) != null;
+            }
+        }
+        
+        /**
+         * Sets the "mimetype" attribute
          */
         public void setMimetype(java.lang.String mimetype)
         {
@@ -141,43 +149,55 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(MIMETYPE$0, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(MIMETYPE$0);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(MIMETYPE$0);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(MIMETYPE$0);
                 }
                 target.setStringValue(mimetype);
             }
         }
         
         /**
-         * Sets (as xml) the "Mimetype" element
+         * Sets (as xml) the "mimetype" attribute
          */
-        public void xsetMimetype(org.n52.wps.MimetypeDocument.Mimetype mimetype)
+        public void xsetMimetype(org.apache.xmlbeans.XmlString mimetype)
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.MimetypeDocument.Mimetype target = null;
-                target = (org.n52.wps.MimetypeDocument.Mimetype)get_store().find_element_user(MIMETYPE$0, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(MIMETYPE$0);
                 if (target == null)
                 {
-                    target = (org.n52.wps.MimetypeDocument.Mimetype)get_store().add_element_user(MIMETYPE$0);
+                    target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(MIMETYPE$0);
                 }
                 target.set(mimetype);
             }
         }
         
         /**
-         * Gets the "SchemaList" element
+         * Unsets the "mimetype" attribute
          */
-        public java.lang.String getSchemaList()
+        public void unsetMimetype()
+        {
+            synchronized (monitor())
+            {
+                check_orphaned();
+                get_store().remove_attribute(MIMETYPE$0);
+            }
+        }
+        
+        /**
+         * Gets the "schema" attribute
+         */
+        public java.lang.String getSchema()
         {
             synchronized (monitor())
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(SCHEMALIST$2, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(SCHEMA$2);
                 if (target == null)
                 {
                     return null;
@@ -187,173 +207,81 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
         }
         
         /**
-         * Gets (as xml) the "SchemaList" element
+         * Gets (as xml) the "schema" attribute
          */
-        public org.n52.wps.SchemaListDocument.SchemaList xgetSchemaList()
+        public org.apache.xmlbeans.XmlString xgetSchema()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.SchemaListDocument.SchemaList target = null;
-                target = (org.n52.wps.SchemaListDocument.SchemaList)get_store().find_element_user(SCHEMALIST$2, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(SCHEMA$2);
                 return target;
             }
         }
         
         /**
-         * True if has "SchemaList" element
+         * True if has "schema" attribute
          */
-        public boolean isSetSchemaList()
+        public boolean isSetSchema()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                return get_store().count_elements(SCHEMALIST$2) != 0;
+                return get_store().find_attribute_user(SCHEMA$2) != null;
             }
         }
         
         /**
-         * Sets the "SchemaList" element
+         * Sets the "schema" attribute
          */
-        public void setSchemaList(java.lang.String schemaList)
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(SCHEMALIST$2, 0);
-                if (target == null)
-                {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(SCHEMALIST$2);
-                }
-                target.setStringValue(schemaList);
-            }
-        }
-        
-        /**
-         * Sets (as xml) the "SchemaList" element
-         */
-        public void xsetSchemaList(org.n52.wps.SchemaListDocument.SchemaList schemaList)
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.n52.wps.SchemaListDocument.SchemaList target = null;
-                target = (org.n52.wps.SchemaListDocument.SchemaList)get_store().find_element_user(SCHEMALIST$2, 0);
-                if (target == null)
-                {
-                    target = (org.n52.wps.SchemaListDocument.SchemaList)get_store().add_element_user(SCHEMALIST$2);
-                }
-                target.set(schemaList);
-            }
-        }
-        
-        /**
-         * Unsets the "SchemaList" element
-         */
-        public void unsetSchemaList()
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                get_store().remove_element(SCHEMALIST$2, 0);
-            }
-        }
-        
-        /**
-         * Gets the "FileExtension" element
-         */
-        public java.lang.String getFileExtension()
+        public void setSchema(java.lang.String schema)
         {
             synchronized (monitor())
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(FILEEXTENSION$4, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(SCHEMA$2);
                 if (target == null)
                 {
-                    return null;
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(SCHEMA$2);
                 }
-                return target.getStringValue();
+                target.setStringValue(schema);
             }
         }
         
         /**
-         * Gets (as xml) the "FileExtension" element
+         * Sets (as xml) the "schema" attribute
          */
-        public org.n52.wps.FileExtensionDocument.FileExtension xgetFileExtension()
+        public void xsetSchema(org.apache.xmlbeans.XmlString schema)
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.FileExtensionDocument.FileExtension target = null;
-                target = (org.n52.wps.FileExtensionDocument.FileExtension)get_store().find_element_user(FILEEXTENSION$4, 0);
-                return target;
-            }
-        }
-        
-        /**
-         * True if has "FileExtension" element
-         */
-        public boolean isSetFileExtension()
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                return get_store().count_elements(FILEEXTENSION$4) != 0;
-            }
-        }
-        
-        /**
-         * Sets the "FileExtension" element
-         */
-        public void setFileExtension(java.lang.String fileExtension)
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(FILEEXTENSION$4, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(SCHEMA$2);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(FILEEXTENSION$4);
+                    target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(SCHEMA$2);
                 }
-                target.setStringValue(fileExtension);
+                target.set(schema);
             }
         }
         
         /**
-         * Sets (as xml) the "FileExtension" element
+         * Unsets the "schema" attribute
          */
-        public void xsetFileExtension(org.n52.wps.FileExtensionDocument.FileExtension fileExtension)
+        public void unsetSchema()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.FileExtensionDocument.FileExtension target = null;
-                target = (org.n52.wps.FileExtensionDocument.FileExtension)get_store().find_element_user(FILEEXTENSION$4, 0);
-                if (target == null)
-                {
-                    target = (org.n52.wps.FileExtensionDocument.FileExtension)get_store().add_element_user(FILEEXTENSION$4);
-                }
-                target.set(fileExtension);
+                get_store().remove_attribute(SCHEMA$2);
             }
         }
         
         /**
-         * Unsets the "FileExtension" element
-         */
-        public void unsetFileExtension()
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                get_store().remove_element(FILEEXTENSION$4, 0);
-            }
-        }
-        
-        /**
-         * Gets the "Encoding" element
+         * Gets the "encoding" attribute
          */
         public java.lang.String getEncoding()
         {
@@ -361,7 +289,7 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(ENCODING$6, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ENCODING$4);
                 if (target == null)
                 {
                     return null;
@@ -371,33 +299,33 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
         }
         
         /**
-         * Gets (as xml) the "Encoding" element
+         * Gets (as xml) the "encoding" attribute
          */
-        public org.n52.wps.EncodingDocument.Encoding xgetEncoding()
+        public org.apache.xmlbeans.XmlString xgetEncoding()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.EncodingDocument.Encoding target = null;
-                target = (org.n52.wps.EncodingDocument.Encoding)get_store().find_element_user(ENCODING$6, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(ENCODING$4);
                 return target;
             }
         }
         
         /**
-         * True if has "Encoding" element
+         * True if has "encoding" attribute
          */
         public boolean isSetEncoding()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                return get_store().count_elements(ENCODING$6) != 0;
+                return get_store().find_attribute_user(ENCODING$4) != null;
             }
         }
         
         /**
-         * Sets the "Encoding" element
+         * Sets the "encoding" attribute
          */
         public void setEncoding(java.lang.String encoding)
         {
@@ -405,110 +333,42 @@ public class FormatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
             {
                 check_orphaned();
                 org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_element_user(ENCODING$6, 0);
+                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ENCODING$4);
                 if (target == null)
                 {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_element_user(ENCODING$6);
+                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(ENCODING$4);
                 }
                 target.setStringValue(encoding);
             }
         }
         
         /**
-         * Sets (as xml) the "Encoding" element
+         * Sets (as xml) the "encoding" attribute
          */
-        public void xsetEncoding(org.n52.wps.EncodingDocument.Encoding encoding)
+        public void xsetEncoding(org.apache.xmlbeans.XmlString encoding)
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                org.n52.wps.EncodingDocument.Encoding target = null;
-                target = (org.n52.wps.EncodingDocument.Encoding)get_store().find_element_user(ENCODING$6, 0);
+                org.apache.xmlbeans.XmlString target = null;
+                target = (org.apache.xmlbeans.XmlString)get_store().find_attribute_user(ENCODING$4);
                 if (target == null)
                 {
-                    target = (org.n52.wps.EncodingDocument.Encoding)get_store().add_element_user(ENCODING$6);
+                    target = (org.apache.xmlbeans.XmlString)get_store().add_attribute_user(ENCODING$4);
                 }
                 target.set(encoding);
             }
         }
         
         /**
-         * Unsets the "Encoding" element
+         * Unsets the "encoding" attribute
          */
         public void unsetEncoding()
         {
             synchronized (monitor())
             {
                 check_orphaned();
-                get_store().remove_element(ENCODING$6, 0);
-            }
-        }
-        
-        /**
-         * Gets the "active" attribute
-         */
-        public boolean getActive()
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$8);
-                if (target == null)
-                {
-                    return false;
-                }
-                return target.getBooleanValue();
-            }
-        }
-        
-        /**
-         * Gets (as xml) the "active" attribute
-         */
-        public org.apache.xmlbeans.XmlBoolean xgetActive()
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.XmlBoolean target = null;
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$8);
-                return target;
-            }
-        }
-        
-        /**
-         * Sets the "active" attribute
-         */
-        public void setActive(boolean active)
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.SimpleValue target = null;
-                target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(ACTIVE$8);
-                if (target == null)
-                {
-                    target = (org.apache.xmlbeans.SimpleValue)get_store().add_attribute_user(ACTIVE$8);
-                }
-                target.setBooleanValue(active);
-            }
-        }
-        
-        /**
-         * Sets (as xml) the "active" attribute
-         */
-        public void xsetActive(org.apache.xmlbeans.XmlBoolean active)
-        {
-            synchronized (monitor())
-            {
-                check_orphaned();
-                org.apache.xmlbeans.XmlBoolean target = null;
-                target = (org.apache.xmlbeans.XmlBoolean)get_store().find_attribute_user(ACTIVE$8);
-                if (target == null)
-                {
-                    target = (org.apache.xmlbeans.XmlBoolean)get_store().add_attribute_user(ACTIVE$8);
-                }
-                target.set(active);
+                get_store().remove_attribute(ENCODING$4);
             }
         }
     }

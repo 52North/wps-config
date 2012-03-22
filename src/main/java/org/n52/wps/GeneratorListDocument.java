@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface GeneratorListDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GeneratorListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("generatorlist2d82doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GeneratorListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("generatorlist2d82doctype");
     
     /**
      * Gets the "GeneratorList" element
@@ -42,7 +42,7 @@ public interface GeneratorListDocument extends org.apache.xmlbeans.XmlObject
     public interface GeneratorList extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GeneratorList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("generatorlist2c05elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(GeneratorList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("generatorlist2c05elemtype");
         
         /**
          * Gets array of all "Generator" elements

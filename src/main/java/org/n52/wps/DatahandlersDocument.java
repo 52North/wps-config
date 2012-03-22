@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface DatahandlersDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(DatahandlersDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("datahandlersb7eedoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(DatahandlersDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("datahandlersb7eedoctype");
     
     /**
      * Gets the "Datahandlers" element
@@ -42,7 +42,7 @@ public interface DatahandlersDocument extends org.apache.xmlbeans.XmlObject
     public interface Datahandlers extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Datahandlers.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("datahandlers34fdelemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Datahandlers.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("datahandlers34fdelemtype");
         
         /**
          * Gets the "ParserList" element

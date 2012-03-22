@@ -16,7 +16,7 @@ package org.n52.wps;
 public interface TProperty extends org.apache.xmlbeans.XmlString
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(TProperty.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("tproperty7f51type");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(TProperty.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("tproperty7f51type");
     
     /**
      * A factory class with static methods for creating instances

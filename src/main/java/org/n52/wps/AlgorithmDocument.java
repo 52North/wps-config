@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface AlgorithmDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("algorithmc2e4doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("algorithmc2e4doctype");
     
     /**
      * Gets the "Algorithm" element
@@ -42,7 +42,7 @@ public interface AlgorithmDocument extends org.apache.xmlbeans.XmlObject
     public interface Algorithm extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Algorithm.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("algorithmb4c9elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Algorithm.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("algorithmb4c9elemtype");
         
         /**
          * Gets the "className" attribute

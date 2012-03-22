@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface ParserDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("parserc1a2doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ParserDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("parserc1a2doctype");
     
     /**
      * Gets the "Parser" element
@@ -42,7 +42,47 @@ public interface ParserDocument extends org.apache.xmlbeans.XmlObject
     public interface Parser extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Parser.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("parser99fdelemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Parser.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("parser99fdelemtype");
+        
+        /**
+         * Gets array of all "Format" elements
+         */
+        org.n52.wps.FormatDocument.Format[] getFormatArray();
+        
+        /**
+         * Gets ith "Format" element
+         */
+        org.n52.wps.FormatDocument.Format getFormatArray(int i);
+        
+        /**
+         * Returns number of "Format" element
+         */
+        int sizeOfFormatArray();
+        
+        /**
+         * Sets array of all "Format" element
+         */
+        void setFormatArray(org.n52.wps.FormatDocument.Format[] formatArray);
+        
+        /**
+         * Sets ith "Format" element
+         */
+        void setFormatArray(int i, org.n52.wps.FormatDocument.Format format);
+        
+        /**
+         * Inserts and returns a new empty value (as xml) as the ith "Format" element
+         */
+        org.n52.wps.FormatDocument.Format insertNewFormat(int i);
+        
+        /**
+         * Appends and returns a new empty value (as xml) as the last "Format" element
+         */
+        org.n52.wps.FormatDocument.Format addNewFormat();
+        
+        /**
+         * Removes the ith "Format" element
+         */
+        void removeFormat(int i);
         
         /**
          * Gets array of all "Property" elements
@@ -152,7 +192,7 @@ public interface ParserDocument extends org.apache.xmlbeans.XmlObject
         public interface Name extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("namea432attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(Name.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("namea432attrtype");
             
             /**
              * A factory class with static methods for creating instances
@@ -182,7 +222,7 @@ public interface ParserDocument extends org.apache.xmlbeans.XmlObject
         public interface ClassName extends org.apache.xmlbeans.XmlString
         {
             public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ClassName.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("classname1152attrtype");
+                org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ClassName.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("classname1152attrtype");
             
             /**
              * A factory class with static methods for creating instances

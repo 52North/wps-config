@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface WPSConfigurationDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WPSConfigurationDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("wpsconfigurationfb85doctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WPSConfigurationDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("wpsconfigurationfb85doctype");
     
     /**
      * Gets the "WPSConfiguration" element
@@ -42,7 +42,7 @@ public interface WPSConfigurationDocument extends org.apache.xmlbeans.XmlObject
     public interface WPSConfiguration extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WPSConfiguration.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("wpsconfiguration609delemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(WPSConfiguration.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("wpsconfiguration609delemtype");
         
         /**
          * Gets the "Datahandlers" element

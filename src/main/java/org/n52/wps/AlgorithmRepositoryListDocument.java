@@ -17,7 +17,7 @@ package org.n52.wps;
 public interface AlgorithmRepositoryListDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmRepositoryListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("algorithmrepositorylist813cdoctype");
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmRepositoryListDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("algorithmrepositorylist813cdoctype");
     
     /**
      * Gets the "AlgorithmRepositoryList" element
@@ -42,7 +42,7 @@ public interface AlgorithmRepositoryListDocument extends org.apache.xmlbeans.Xml
     public interface AlgorithmRepositoryList extends org.apache.xmlbeans.XmlObject
     {
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
-            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmRepositoryList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s1FC5A1EE3CEAF1BF777053E793444579").resolveHandle("algorithmrepositorylistcc79elemtype");
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(AlgorithmRepositoryList.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.sC48AB9F2ECCE92D00870263D17307532").resolveHandle("algorithmrepositorylistcc79elemtype");
         
         /**
          * Gets array of all "Repository" elements
