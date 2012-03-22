@@ -88,6 +88,52 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
+			<plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <connectionUrl>
+                    	scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
+                    </connectionUrl>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.0-rc1</version>
+                <configuration>
+                    <connectionType>connection</connectionType>
+                    <runChangeLog>true</runChangeLog>
+                    <goalsDirectory>./..</goalsDirectory>
+                    <!--checkoutDirectory>${basedir}/src</checkoutDirectory-->
+                </configuration>
+            </plugin>
 		</plugins>
 	</build>
+	    <profiles>
+        <profile>
+            <id>env-ci</id>
+            <activation>
+                <property>
+                    <name>env</name>
+                    <value>ci</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-release-plugin</artifactId>
+                        <configuration>
+                            <connectionUrl>
+                                scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
+                            </connectionUrl>
+                            <!-- make use of system prop set by hudson -->
+                            <tag>52n-wps-config-${project.rel.org.n52.wps:52n-wps-config}</tag>
+                            <remoteTagging>false</remoteTagging>
+                            <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
