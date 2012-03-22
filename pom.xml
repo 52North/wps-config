@@ -9,7 +9,7 @@
 	<artifactId>52n-wps-config</artifactId>
 	<packaging>jar</packaging>
 	<name>52n-WPS-Config</name>
-	<version>1.0.5</version>
+	<version>1.0.6-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -135,10 +135,4 @@
             </build>
         </profile>
     </profiles>
-
-  <scm>
-    <connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/WPS/tags/52n-wps-config-1.0.5</connection>
-    <developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/WPS/tags/52n-wps-config-1.0.5</developerConnection>
-    <url>https://svn.52north.org/svn/geoprocessing/main/WPS/tags/52n-wps-config-1.0.5</url>
-  </scm>
 </project>
