@@ -132,7 +132,7 @@
                                 scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
                             </connectionUrl>
                             <!-- make use of system prop set by hudson -->
-                            <tag>52n-wps-config-1.0.5</tag>
+                            <tag>52n-wps-config-1.0.6</tag>
                             <remoteTagging>false</remoteTagging>
                             <suppressCommitBeforeTag>true</suppressCommitBeforeTag>
                         </configuration>
