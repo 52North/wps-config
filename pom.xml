@@ -14,7 +14,7 @@
         <!-- Specification of the Source-Content-Managementsystem -->
         <connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</connection>
         <developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</developerConnection>
-		<url>https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</url>
+		<url>https://svn.52north.org/cgi-bin/viewvc.cgi/main/52n-wps-config/trunk/?root=geoprocessing</url>
   	</scm>
 	<dependencies>
 		<dependency>
@@ -35,8 +35,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.n52.wps</groupId>
-			<artifactId>52n-wps-xml</artifactId>
-			<version>1.0.0</version>
+			<artifactId>52n-xml-wps-v100</artifactId>
+			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 	<description>52n-WPS-Config</description>
