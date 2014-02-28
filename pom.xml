@@ -1,37 +1,66 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    ﻿Copyright (C) 2004 - 2014 52North Initiative for Geospatial Open Source
+    Software GmbH
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the GNU General Public License version 2 as published
+    by the Free Software Foundation.
+
+    If the program is linked with libraries which are licensed under one of
+    the following licenses, the combination of the program with the linked
+    library is not considered a "derivative work" of the program:
+
+          • Apache License, version 2.0
+          • Apache Software License, version 1.0
+          • GNU Lesser General Public License, version 3
+          • Mozilla Public License, versions 1.0, 1.1 and 2.0
+          • Common Development and Distribution License (CDDL), version 1.0
+
+    Therefore the distribution of the program linked with libraries licensed
+    under the aforementioned licenses, is permitted by the copyright holders
+    if the distribution is compliant with both the GNU General Public
+    License version 2 and the aforementioned licenses.
+
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+    Public License for more details.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-    <parent>
-        <artifactId>52-North</artifactId>
-        <groupId>org.n52</groupId>
-        <version>5.2</version>
-    </parent>
+	<parent>
+		<artifactId>52-North</artifactId>
+		<groupId>org.n52</groupId>
+		<version>5.2</version>
+	</parent>
 	<groupId>org.n52.wps</groupId>
 	<artifactId>52n-wps-config</artifactId>
 	<packaging>jar</packaging>
 	<name>52n-WPS-Config</name>
 	<version>1.1.1-SNAPSHOT</version>
+	<inceptionYear>2012</inceptionYear>
+	<licenses>
+		<license>
+			<name>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</name>
+			<url>http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</url>
+		</license>
+	</licenses>
 	<scm>
-        <!-- Specification of the Source-Content-Managementsystem -->
-        <connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</connection>
-        <developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</developerConnection>
+		<!-- Specification of the Source-Content-Managementsystem -->
+		<connection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</connection>
+		<developerConnection>scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk</developerConnection>
 		<url>https://svn.52north.org/cgi-bin/viewvc.cgi/main/52n-wps-config/trunk/?root=geoprocessing</url>
-  	</scm>
+	</scm>
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-		</dependency>
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
 			<artifactId>xmlbeans</artifactId>
 			<version>2.4.0</version>
 			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.n52.wps</groupId>
@@ -41,31 +70,35 @@
 	</dependencies>
 	<description>52n-WPS-Config</description>
 	<repositories>
-	    <repository>
-      <id>n52-releases</id>
-      <name>52n Releases</name>
-      <url>http://52north.org/maven/repo/releases</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+		<repository>
+			<id>n52-releases</id>
+			<name>52n Releases</name>
+			<url>http://52north.org/maven/repo/releases</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.5</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.wagon</groupId>
-						<artifactId>wagon-ssh</artifactId>
-						<version>1.0-beta-7</version>
-					</dependency>
-				</dependencies>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.4</version>
+				<inherited>true</inherited>
+				<configuration>
+					<archive>
+						<!-- no index leads to errors, in some classloaders -->
+						<index>false</index>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -73,65 +106,64 @@
 				<version>2.3.3</version>
 				<executions>
 					<execution>
-						<phase>generate-sources</phase>
+						<id>main</id>
 						<goals>
 							<goal>xmlbeans</goal>
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-					<sourceGenerationDirectory>src/main/java</sourceGenerationDirectory>
+					<!-- xmlbeans plugin only used to generate the classes not for compiling 
+						or jar generation. -->
+					<noJavac>true</noJavac>
+					<memoryInitialSize>256</memoryInitialSize>
+					<memoryMaximumSize>512</memoryMaximumSize>
+					<download>false</download>
+					<schemaDirectory>src/main/xsd</schemaDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
+				<groupId>org.jasig.maven</groupId>
+				<artifactId>maven-notice-plugin</artifactId>
+				<version>1.0.5</version>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<noticeTemplate>misc/NOTICE.template</noticeTemplate>
+					<licenseMapping>
+						<param>http://52north.github.io/cdn/licenses/license-mappings.xml</param>
+					</licenseMapping>
+					<generateChildNotices>false</generateChildNotices>
 				</configuration>
+				<executions>
+					<execution>
+						<id>check-notice</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
-			<plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <connectionUrl>
-                    	scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
-                    </connectionUrl>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-scm-plugin</artifactId>
-                <version>1.0-rc1</version>
-                <configuration>
-                    <connectionType>connection</connectionType>
-                    <runChangeLog>true</runChangeLog>
-                    <goalsDirectory>./..</goalsDirectory>
-                    <!--checkoutDirectory>${basedir}/src</checkoutDirectory-->
-                </configuration>
-            </plugin>
 		</plugins>
 	</build>
-	    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-release-plugin</artifactId>
-                        <configuration>
-                            <connectionUrl>
-                                scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
-                            </connectionUrl>
+	<profiles>
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-release-plugin</artifactId>
+						<configuration>
+							<connectionUrl>
+								scm:svn:https://svn.52north.org/svn/geoprocessing/main/52n-wps-config/trunk/
+							</connectionUrl>
 							<preparationGoals>clean</preparationGoals>
-                            <!-- make use of system prop set by hudson -->
-                            <tag>52n-wps-config-${project.rel.org.n52.wps:52n-wps-config}</tag>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+							<!-- make use of system prop set by hudson -->
+							<tag>52n-wps-config-${project.rel.org.n52.wps:52n-wps-config}</tag>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
