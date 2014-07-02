@@ -12,7 +12,7 @@
 	
 	<name>WPS-Config</name>
 	<description>Java classes to use the XML-based configuration file for the 52°North WPS</description>
-	<version>1.2.0</version>
+	<version>1.2.1-SNAPSHOT</version>
 	<inceptionYear>2012</inceptionYear>
 	
 	<licenses>
