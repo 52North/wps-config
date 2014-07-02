@@ -2,6 +2,8 @@
 
 Java classes for XML-based configuration of the 52°North WPS.
 
+For project details see http://52north.org/wps
+
 ## Integration
 
 The library is published in the 52°North Maven repository. If you want to integrate this library into a Java project add the following dependency:
