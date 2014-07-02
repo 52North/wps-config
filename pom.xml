@@ -33,6 +33,7 @@
 		<!-- We use the fork & pull development model: https://help.github.com/articles/using-pull-requests -->
 		<connection>scm:git:git://github.com/52North/wps-config.git</connection>
 		<url>https://github.com/52North/wps-config</url>
+		<developerConnection>scm:git:ssh://git@github.com/52North/wps-config.git</developerConnection>
 	</scm>
 	
 	<properties>
