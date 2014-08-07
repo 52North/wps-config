@@ -19,6 +19,11 @@
 				<xs:element ref="Property" minOccurs="0" maxOccurs="unbounded"/>
 				<xs:element ref="Database" minOccurs="0"/>
 			</xs:sequence>
+			<xs:attribute name="protocol" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
 			<xs:attribute name="hostname" use="required">
 				<xs:simpleType>
 					<xs:restriction base="xs:string"/>
