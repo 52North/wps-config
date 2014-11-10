@@ -59,6 +59,26 @@
 					<xs:restriction base="xs:double"/>
 				</xs:simpleType>
 			</xs:attribute>
+						<xs:attribute name="minPoolSize" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxPoolSize" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="keepAliveSeconds" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="maxQueuedTasks" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Repository">
